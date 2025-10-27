@@ -13,7 +13,7 @@ public class RibbonDecorator extends ItemDecorator {
 
     @Override
     public String getDescription() {
-        return this.getDescription();
+        return item.getDescription() + " with ribbon.";
     }
     
 }

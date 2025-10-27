@@ -3,11 +3,13 @@ package ua.edu.ucu.apps.lab7.controller;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import ua.edu.ucu.apps.lab7.payment.CreditCartPaymentStrategy;
 import ua.edu.ucu.apps.lab7.payment.PayPalPaymentStrategy;
 import ua.edu.ucu.apps.lab7.payment.Payment;
 
+@RestController
 public class PaymentController {
 
     @GetMapping("/payments")

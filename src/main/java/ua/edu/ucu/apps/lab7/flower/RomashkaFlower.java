@@ -8,6 +8,6 @@ public class RomashkaFlower extends Item{
     }
     @Override
     public double getPrice() {
-        return this.getPrice();
+        return item.getPrice();
     }
 }

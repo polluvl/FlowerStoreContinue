@@ -13,7 +13,7 @@ public class BasketDecorator extends ItemDecorator{
 
     @Override
     public String getDescription() {
-        return this.getDescription();
+        return item.getDescription() + " in basket.";
     }
 
 
