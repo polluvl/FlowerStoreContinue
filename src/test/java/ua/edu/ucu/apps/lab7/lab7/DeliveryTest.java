@@ -11,7 +11,7 @@ import ua.edu.ucu.apps.lab7.flower.Flower;
 import ua.edu.ucu.apps.lab7.flower.FlowerColor;
 import ua.edu.ucu.apps.lab7.flower.FlowerType;
 
-class StoreTest {
+class DeliveryTest {
 
     private Store store;
     private Flower redRose;
