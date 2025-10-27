@@ -6,6 +6,7 @@ public class RomashkaFlower extends Item{
     public RomashkaFlower(Item item) {
         this.item = item;
     }
+    @Override
     public double getPrice() {
         return this.getPrice();
     }

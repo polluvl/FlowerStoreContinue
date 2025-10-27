@@ -6,7 +6,7 @@ public class RibbonDecorator extends ItemDecorator {
     public RibbonDecorator (Item item) {
         this.item = item;
     }
-
+    @Override
     public double getPrice() {
         return this.item.getPrice() + 40;
     }

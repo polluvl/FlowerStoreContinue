@@ -6,6 +6,7 @@ public class CactusFlower extends Item{
     public CactusFlower(Item item) {
         this.item = item;
     }
+    @Override
     public double getPrice() {
         return this.getPrice();
     }
