@@ -3,13 +3,10 @@ package ua.edu.ucu.apps.lab7.flower;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FlowerBucket {
-    // list of flower packets
+public class FlowerBucket extends Item {
     private List<FlowerPack> flowerPacks;
 
-    // без параметрів щоб уникнути проблем
-    // <> означає що будуємо ліст на якомусь типі. 
-    // тип на дженеріку. по дефолту - обджект
+
     public FlowerBucket() {
         this.flowerPacks = new ArrayList<>();
     }
