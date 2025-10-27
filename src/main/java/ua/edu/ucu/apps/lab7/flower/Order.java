@@ -2,8 +2,8 @@ package ua.edu.ucu.apps.lab7.flower;
 import java.util.LinkedList;
 import java.util.List;
 
-import ua.edu.payment.Payment;
 import ua.edu.ucu.apps.lab7.delivery.Delivery;
+import ua.edu.ucu.apps.lab7.payment.Payment;
 
 public class Order {
     private List<Item> items = new LinkedList<>();

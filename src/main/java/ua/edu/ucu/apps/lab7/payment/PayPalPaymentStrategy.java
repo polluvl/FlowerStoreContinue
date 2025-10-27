@@ -1,4 +1,4 @@
-package ua.edu.payment;
+package ua.edu.ucu.apps.lab7.payment;
 
 public class PayPalPaymentStrategy implements Payment{
 

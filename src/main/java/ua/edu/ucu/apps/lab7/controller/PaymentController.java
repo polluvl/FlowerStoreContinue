@@ -4,9 +4,9 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
 
-import ua.edu.payment.CreditCartPaymentStrategy;
-import ua.edu.payment.PayPalPaymentStrategy;
-import ua.edu.payment.Payment;
+import ua.edu.ucu.apps.lab7.payment.CreditCartPaymentStrategy;
+import ua.edu.ucu.apps.lab7.payment.PayPalPaymentStrategy;
+import ua.edu.ucu.apps.lab7.payment.Payment;
 
 public class PaymentController {
 
