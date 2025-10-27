@@ -31,9 +31,3 @@ jobs:
 
       - name: Package artifact
         run: mvn package --batch-mode
-
-      - name: Publish to GitHub Packages
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: mvn deploy -DskipTests
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
