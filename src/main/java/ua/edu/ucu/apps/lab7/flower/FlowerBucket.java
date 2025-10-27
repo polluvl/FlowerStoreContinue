@@ -4,18 +4,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FlowerBucket extends Item {
-    private List<FlowerPack> flowerPacks;
+    private List<Flower> flowers;
 
 
     public FlowerBucket() {
-        this.flowerPacks = new ArrayList<>();
+        this.flowers = new ArrayList<>();
     }
 
-    public void add(FlowerPack flowerPack) {
-        flowerPacks.add(flowerPack);
+    public void addFlowers(Flower flower) {
+        flowers.add(flower);
     }
 
+    @Override
     public double getPrice() {
-        return flowerPacks.stream().mapToDouble(pack -> pack.getPrice()).sum();
+        double total = 0;
+        for (Flower f : flowers) {
+            total += f.getPrice();
+        }
+        return total;
+    }
+
+    public Flower searchFlower(FlowerType type) {
+        for (Flower flower_in : flowers) {
+            if (flower_in.getFlowerType() == type) {
+                return flower_in;
+            }
+        }
+        return null;
     }
 }
