@@ -16,7 +16,7 @@ public class FlowerController {
     @GetMapping("/flowers")
     public List<Flower> getFlowers() {
         return List.of(
-            new Flower(FlowerColor.RED, 100, 10, FlowerType.TULIP)
+            new Flower(FlowerColor.RED, FlowerType.TULIP, 10, 100)
         );
     }
 }

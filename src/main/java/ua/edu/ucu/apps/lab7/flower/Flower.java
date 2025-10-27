@@ -1,10 +1,5 @@
 package ua.edu.ucu.apps.lab7.flower;
 
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
-
-@NoArgsConstructor
-@AllArgsConstructor
 public class Flower {
 
     private FlowerColor color;
